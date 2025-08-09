@@ -8,3 +8,5 @@ class Input:
     input_artist: str | None = None
     input_album: str | None = None
     input_lyrics: str | None = None
+    input_year: str | None = None
+    input_art: str | None = None
