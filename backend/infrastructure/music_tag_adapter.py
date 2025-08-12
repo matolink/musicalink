@@ -27,7 +27,7 @@ class MusicTagAdapter(TagEditorOutPort):
         if getattr(input, "input_art", None):
             img_data = re.sub(r"^data:image\/[a-zA-Z]+;base64,", "", input.input_art)
             song.md_artwork = base64.b64decode(img_data)
-            f['artwork'] = song.md_artwork
-            f['artwork'].first.raw_thumbnail([64, 64])
+            # f['artwork'] = song.md_artwork
+            # f['artwork'].first.raw_thumbnail([64, 64])
         f.save()
         return True
